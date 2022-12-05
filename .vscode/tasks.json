@@ -36,6 +36,41 @@
 				"isDefault": true
 			},
 			"detail": "compiler: C:\\MinGW\\bin\\g++.exe"
+		},
+		{
+			"type": "cppbuild",
+			"label": "Release",
+			"command": "C:\\MinGW\\bin\\g++.exe",
+			"args": [
+				"-fdiagnostics-color=always",
+				"${workspaceFolder}\\src\\*.cpp",
+				"-o",
+				"${workspaceFolder}\\build\\release\\${fileBasenameNoExtension}.exe",
+				"-I",
+				"${workspaceFolder}\\include",
+				"-I",
+				"C:\\Program Files (x86)\\wxWidgets\\include",
+				"-I",
+				"C:\\Program Files (x86)\\wxWidgets\\lib\\gcc_dll\\mswu",
+				"-L",
+				"C:\\Program Files (x86)\\wxWidgets\\lib\\gcc_dll",
+				"-l",
+				"wxmsw31u_core",
+				"-l",
+				"wxbase31u",
+
+			],
+			"options": {
+				"cwd": "${fileDirname}"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"detail": "compiler: C:\\MinGW\\bin\\g++.exe"
 		}
 	]
 }
