@@ -19,7 +19,7 @@ MyFrame::MyFrame()
     SetMenuBar( menuBar );
  
     CreateStatusBar();
-    SetStatusText("Randy Prima Putra");
+    SetStatusText("");
  
     Bind(wxEVT_MENU, &MyFrame::OnHello, this, ID_Hello);
     Bind(wxEVT_MENU, &MyFrame::OnAbout, this, wxID_ABOUT);
